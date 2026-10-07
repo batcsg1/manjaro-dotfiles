@@ -56,7 +56,7 @@ hl.monitor({
 local terminal = "kitty"
 local fileManager = "yazi"
 local menu = "wofi --show drun"
-local browser = "brave-origin-nightly --force-device-scale-factor=1.1"
+local browser = "brave-origin-nightly"
 local lock = "hyprlock"
 local managementMenu = "~/.config/wofi/powermenu.fish"
 -------------------
