@@ -1,0 +1,65 @@
+# Neon Green — matches kitty / nvim / waybar / wofi / rofi / starship
+# Void:   #0A0F0A #0F1710 #17261A #2F4A35
+# Haze:   #C6F5CE #DDFFE3 #F2FFF4
+# Neon:   #00FFC8 #39FF14 #76FF3C #0ABF53
+# Signal: #FF2D55 #FFB31A #D7FF1A #00FF85 #00E5A0
+theme[main_bg]="#0A0F0A"
+theme[main_fg]="#C6F5CE"
+
+theme[title]="#39FF14"
+theme[hi_fg]="#39FF14"
+theme[selected_bg]="#17261A"
+theme[selected_fg]="#F2FFF4"
+
+theme[inactive_fg]="#2F4A35"
+theme[graph_text]="#DDFFE3"
+theme[meter_bg]="#0F1710"
+theme[proc_misc]="#00FFC8"
+
+# box outlines
+theme[cpu_box]="#39FF14"
+theme[mem_box]="#00FF85"
+theme[net_box]="#00E5A0"
+theme[proc_box]="#76FF3C"
+theme[div_line]="#17261A"
+
+# temps: aqua -> acid -> red
+theme[temp_start]="#00FFC8"
+theme[temp_mid]="#D7FF1A"
+theme[temp_end]="#FF2D55"
+
+# cpu load: green -> acid -> red
+theme[cpu_start]="#39FF14"
+theme[cpu_mid]="#D7FF1A"
+theme[cpu_end]="#FF2D55"
+
+# memory meters
+theme[free_start]="#2F4A35"
+theme[free_mid]="#0ABF53"
+theme[free_end]="#39FF14"
+
+theme[cached_start]="#2F4A35"
+theme[cached_mid]="#00E5A0"
+theme[cached_end]="#00FFC8"
+
+theme[available_start]="#2F4A35"
+theme[available_mid]="#00FF85"
+theme[available_end]="#76FF3C"
+
+theme[used_start]="#0ABF53"
+theme[used_mid]="#D7FF1A"
+theme[used_end]="#FF2D55"
+
+# network graphs
+theme[download_start]="#0ABF53"
+theme[download_mid]="#39FF14"
+theme[download_end]="#76FF3C"
+
+theme[upload_start]="#00E5A0"
+theme[upload_mid]="#00FF85"
+theme[upload_end]="#00FFC8"
+
+# process list cpu meter
+theme[process_start]="#0ABF53"
+theme[process_mid]="#39FF14"
+theme[process_end]="#A8FF00"

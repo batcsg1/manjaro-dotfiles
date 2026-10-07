@@ -1,43 +1,43 @@
-/* Nord — port of ROG RGB layout
-   Polar Night  nord0 #2E3440  nord1 #3B4252  nord2 #434C5E  nord3 #4C566A
-   Snow Storm   nord4 #D8DEE9  nord5 #E5E9F0  nord6 #ECEFF4
-   Frost        nord7 #8FBCBB  nord8 #88C0D0  nord9 #81A1C1  nord10 #5E81AC
-   Aurora       nord11 #BF616A nord12 #D08770 nord13 #EBCB8B nord14 #A3BE8C nord15 #B48EAD */
+/* Neon Green — port of the Nord layout
+   Void    neon0 #0A0F0A  neon1 #0F1710  neon2 #17261A  neon3 #2F4A35
+   Haze    neon4 #C6F5CE  neon5 #DDFFE3  neon6 #F2FFF4
+   Neon    neon7 #00FFC8  neon8 #39FF14  neon9 #76FF3C  neon10 #0ABF53
+   Signal  neon11 #FF2D55 neon12 #FFB31A neon13 #D7FF1A neon14 #00FF85 neon15 #00E5A0 */
 
-@define-color nord0  #2E3440;
-@define-color nord1  #3B4252;
-@define-color nord2  #434C5E;
-@define-color nord3  #4C566A;
-@define-color nord4  #D8DEE9;
-@define-color nord5  #E5E9F0;
-@define-color nord6  #ECEFF4;
-@define-color nord7  #8FBCBB;
-@define-color nord8  #88C0D0;
-@define-color nord9  #81A1C1;
-@define-color nord10 #5E81AC;
-@define-color nord11 #BF616A;
-@define-color nord12 #D08770;
-@define-color nord13 #EBCB8B;
-@define-color nord14 #A3BE8C;
-@define-color nord15 #B48EAD;
+@define-color neon0  #0A0F0A;
+@define-color neon1  #0F1710;
+@define-color neon2  #17261A;
+@define-color neon3  #2F4A35;
+@define-color neon4  #C6F5CE;
+@define-color neon5  #DDFFE3;
+@define-color neon6  #F2FFF4;
+@define-color neon7  #00FFC8;
+@define-color neon8  #39FF14;
+@define-color neon9  #76FF3C;
+@define-color neon10 #0ABF53;
+@define-color neon11 #FF2D55;
+@define-color neon12 #FFB31A;
+@define-color neon13 #D7FF1A;
+@define-color neon14 #00FF85;
+@define-color neon15 #00E5A0;
 
-/* slow cycle through Frost + Aurora (calmer than the RGB version) */
-@keyframes nord-cycle {
-    0%   { background-color: #88C0D0; box-shadow: 0 0 4px alpha(#88C0D0, 0.5); }
-    16%  { background-color: #81A1C1; box-shadow: 0 0 4px alpha(#81A1C1, 0.5); }
-    33%  { background-color: #B48EAD; box-shadow: 0 0 4px alpha(#B48EAD, 0.5); }
-    50%  { background-color: #D08770; box-shadow: 0 0 4px alpha(#D08770, 0.5); }
-    66%  { background-color: #EBCB8B; box-shadow: 0 0 4px alpha(#EBCB8B, 0.5); }
-    83%  { background-color: #A3BE8C; box-shadow: 0 0 4px alpha(#A3BE8C, 0.5); }
-    100% { background-color: #88C0D0; box-shadow: 0 0 4px alpha(#88C0D0, 0.5); }
+/* slow cycle through the neon range */
+@keyframes neon-cycle {
+    0%   { background-color: #39FF14; box-shadow: 0 0 4px alpha(#39FF14, 0.5); }
+    16%  { background-color: #76FF3C; box-shadow: 0 0 4px alpha(#76FF3C, 0.5); }
+    33%  { background-color: #A8FF00; box-shadow: 0 0 4px alpha(#A8FF00, 0.5); }
+    50%  { background-color: #D7FF1A; box-shadow: 0 0 4px alpha(#D7FF1A, 0.5); }
+    66%  { background-color: #00FF85; box-shadow: 0 0 4px alpha(#00FF85, 0.5); }
+    83%  { background-color: #00FFC8; box-shadow: 0 0 4px alpha(#00FFC8, 0.5); }
+    100% { background-color: #39FF14; box-shadow: 0 0 4px alpha(#39FF14, 0.5); }
 }
 
-@keyframes frost-text {
-    0%   { color: #ECEFF4; border-bottom-color: #88C0D0; }
-    25%  { color: #E5E9F0; border-bottom-color: #81A1C1; }
-    50%  { color: #ECEFF4; border-bottom-color: #5E81AC; }
-    75%  { color: #E5E9F0; border-bottom-color: #8FBCBB; }
-    100% { color: #ECEFF4; border-bottom-color: #88C0D0; }
+@keyframes neon-text {
+    0%   { color: #F2FFF4; border-bottom-color: #39FF14; }
+    25%  { color: #DDFFE3; border-bottom-color: #76FF3C; }
+    50%  { color: #F2FFF4; border-bottom-color: #0ABF53; }
+    75%  { color: #DDFFE3; border-bottom-color: #00FFC8; }
+    100% { color: #F2FFF4; border-bottom-color: #39FF14; }
 }
 
 * {
@@ -47,29 +47,29 @@
 }
 
 window#waybar {
-    background: alpha(@nord0, 0.85);
-    color: @nord4;
+    background: alpha(@neon0, 0.85);
+    color: @neon4;
     border-bottom: 2px solid transparent;
     border-image: linear-gradient(90deg,
-        #8FBCBB, #88C0D0, #81A1C1, #5E81AC, #B48EAD, #81A1C1, #88C0D0) 1;
+        #00FFC8, #39FF14, #76FF3C, #0ABF53, #00E5A0, #76FF3C, #39FF14) 1;
 }
 
 tooltip {
-    background: @nord0;
-    border: 1px solid @nord3;
+    background: @neon0;
+    border: 1px solid @neon3;
     border-radius: 8px;
 }
-tooltip label { color: @nord4; }
+tooltip label { color: @neon4; }
 
 /* distro pill */
 #custom-distro {
     padding: 2px 8px;
     border-radius: 8px;
     font-weight: bold;
-    color: @nord0;
+    color: @neon0;
     margin: 4px 2px;
-    background-color: @nord8;
-    animation: nord-cycle 12s linear infinite;
+    background-color: @neon8;
+    animation: neon-cycle 12s linear infinite;
 }
 
 #clock,
@@ -83,7 +83,7 @@ tooltip label { color: @nord4; }
 #network,
 #cpu,
 #battery {
-    background-color: alpha(@nord1, 0.85);
+    background-color: alpha(@neon1, 0.85);
     border-radius: 8px;
     padding: 2px 14px;
     margin: 4px 2px;
@@ -91,77 +91,77 @@ tooltip label { color: @nord4; }
     border-bottom: 2px solid transparent;
 }
 
-/* clock: Frost gradient wash, text + underline drift through Frost */
+/* clock: neon gradient wash, text + underline drift through the greens */
 #clock {
     margin: 4px 6px;
     background: linear-gradient(90deg,
-        alpha(#8FBCBB, 0.15),
-        alpha(#88C0D0, 0.15),
-        alpha(#81A1C1, 0.15),
-        alpha(#5E81AC, 0.15)),
-        alpha(@nord1, 0.90);
-    border-bottom: 2px solid @nord8;
-    animation: frost-text 10s linear infinite;
+        alpha(#00FFC8, 0.15),
+        alpha(#39FF14, 0.15),
+        alpha(#76FF3C, 0.15),
+        alpha(#0ABF53, 0.15)),
+        alpha(@neon1, 0.90);
+    border-bottom: 2px solid @neon8;
+    animation: neon-text 10s linear infinite;
 }
 
 /* one hue per module: text + underline in the hue,
-   background = hue mixed ~15% into nord0 */
-#custom-uptime   { color: @nord15; border-bottom-color: @nord15; background-color: alpha(mix(@nord0, @nord15, 0.15), 0.90); }
-#temperature     { color: @nord12; border-bottom-color: @nord12; background-color: alpha(mix(@nord0, @nord12, 0.15), 0.90); }
-#cpu             { color: @nord13; border-bottom-color: @nord13; background-color: alpha(mix(@nord0, @nord13, 0.15), 0.90); }
-#memory          { color: @nord14; border-bottom-color: @nord14; background-color: alpha(mix(@nord0, @nord14, 0.15), 0.90); }
-#disk            { color: @nord7;  border-bottom-color: @nord7;  background-color: alpha(mix(@nord0, @nord7,  0.15), 0.90); }
-#pulseaudio      { color: @nord8;  border-bottom-color: @nord8;  background-color: alpha(mix(@nord0, @nord8,  0.15), 0.90); }
-#custom-netspeed { color: @nord9;  border-bottom-color: @nord9;  background-color: alpha(mix(@nord0, @nord9,  0.15), 0.90); }
-#network         { color: @nord10; border-bottom-color: @nord10; background-color: alpha(mix(@nord0, @nord10, 0.15), 0.90); }
-#bluetooth       { color: @nord15; border-bottom-color: @nord15; background-color: alpha(mix(@nord0, @nord15, 0.15), 0.90); }
-#battery         { color: @nord14; border-bottom-color: @nord14; background-color: alpha(mix(@nord0, @nord14, 0.15), 0.90); padding: 2px 10px; }
-#tray            { padding: 0 10px; color: @nord4; }
+   background = hue mixed ~15% into neon0 */
+#custom-uptime   { color: @neon15; border-bottom-color: @neon15; background-color: alpha(mix(@neon0, @neon15, 0.15), 0.90); }
+#temperature     { color: @neon12; border-bottom-color: @neon12; background-color: alpha(mix(@neon0, @neon12, 0.15), 0.90); }
+#cpu             { color: @neon13; border-bottom-color: @neon13; background-color: alpha(mix(@neon0, @neon13, 0.15), 0.90); }
+#memory          { color: @neon14; border-bottom-color: @neon14; background-color: alpha(mix(@neon0, @neon14, 0.15), 0.90); }
+#disk            { color: @neon7;  border-bottom-color: @neon7;  background-color: alpha(mix(@neon0, @neon7,  0.15), 0.90); }
+#pulseaudio      { color: @neon8;  border-bottom-color: @neon8;  background-color: alpha(mix(@neon0, @neon8,  0.15), 0.90); }
+#custom-netspeed { color: @neon9;  border-bottom-color: @neon9;  background-color: alpha(mix(@neon0, @neon9,  0.15), 0.90); }
+#network         { color: @neon10; border-bottom-color: @neon10; background-color: alpha(mix(@neon0, @neon10, 0.15), 0.90); }
+#bluetooth       { color: @neon15; border-bottom-color: @neon15; background-color: alpha(mix(@neon0, @neon15, 0.15), 0.90); }
+#battery         { color: @neon14; border-bottom-color: @neon14; background-color: alpha(mix(@neon0, @neon14, 0.15), 0.90); padding: 2px 10px; }
+#tray            { padding: 0 10px; color: @neon4; }
 
 /* states */
 #battery.charging,
 #battery.plugged {
-    color: @nord8;
-    border-bottom-color: @nord8;
+    color: @neon8;
+    border-bottom-color: @neon8;
 }
 
 #battery.warning:not(.charging) {
-    color: @nord13;
-    border-bottom-color: @nord13;
+    color: @neon13;
+    border-bottom-color: @neon13;
 }
 
 #temperature.critical,
 #battery.critical:not(.charging) {
-    color: @nord0;
-    background-color: @nord11;
-    border-bottom-color: @nord11;
+    color: @neon0;
+    background-color: @neon11;
+    border-bottom-color: @neon11;
 }
 
 #pulseaudio.muted {
-    color: @nord3;
+    color: @neon3;
     border-bottom-color: transparent;
 }
 
 #bluetooth.disabled {
-    color: alpha(@nord4, 0.3);
-    background-color: alpha(@nord0, 0.4);
+    color: alpha(@neon4, 0.3);
+    background-color: alpha(@neon0, 0.4);
     border-bottom-color: transparent;
 }
 
 #bluetooth.off,
 #network.disconnected {
-    color: @nord3;
-    background-color: alpha(@nord0, 0.4);
+    color: @neon3;
+    background-color: alpha(@neon0, 0.4);
     border-bottom-color: transparent;
 }
 
 #network.disconnected {
-    color: @nord11;
+    color: @neon11;
 }
 
-/* workspaces: dots, each its own Nord hue, active cycles */
+/* workspaces: dots, each its own neon hue, active cycles */
 #workspaces button {
-    background-color: alpha(@nord4, 0.12);
+    background-color: alpha(@neon4, 0.12);
     color: transparent;
     border-radius: 50%;
     min-width: 12px;
@@ -172,31 +172,31 @@ tooltip label { color: @nord4; }
     transition: all 0.2s ease;
 }
 
-#workspaces button:nth-child(7n+1) { background-color: alpha(@nord8,  0.40); }
-#workspaces button:nth-child(7n+2) { background-color: alpha(@nord9,  0.40); }
-#workspaces button:nth-child(7n+3) { background-color: alpha(@nord15, 0.40); }
-#workspaces button:nth-child(7n+4) { background-color: alpha(@nord12, 0.40); }
-#workspaces button:nth-child(7n+5) { background-color: alpha(@nord13, 0.40); }
-#workspaces button:nth-child(7n+6) { background-color: alpha(@nord14, 0.40); }
-#workspaces button:nth-child(7n+7) { background-color: alpha(@nord7,  0.40); }
+#workspaces button:nth-child(7n+1) { background-color: alpha(@neon8,  0.40); }
+#workspaces button:nth-child(7n+2) { background-color: alpha(@neon9,  0.40); }
+#workspaces button:nth-child(7n+3) { background-color: alpha(@neon15, 0.40); }
+#workspaces button:nth-child(7n+4) { background-color: alpha(@neon14, 0.40); }
+#workspaces button:nth-child(7n+5) { background-color: alpha(@neon13, 0.40); }
+#workspaces button:nth-child(7n+6) { background-color: alpha(@neon10, 0.40); }
+#workspaces button:nth-child(7n+7) { background-color: alpha(@neon7,  0.40); }
 
 #workspaces button.empty {
-    background-color: alpha(@nord4, 0.10);
+    background-color: alpha(@neon4, 0.10);
 }
 
 #workspaces button.active {
     min-width: 18px;
     min-height: 8px;
     border-radius: 6px;
-    background-color: @nord8;
-    animation: nord-cycle 6s linear infinite;
+    background-color: @neon8;
+    animation: neon-cycle 6s linear infinite;
 }
 
 #workspaces button.urgent {
-    background-color: @nord11;
+    background-color: @neon11;
 }
 
 #workspaces button:hover {
-    background-color: @nord6;
-    box-shadow: 0 0 4px alpha(@nord6, 0.6);
+    background-color: @neon6;
+    box-shadow: 0 0 4px alpha(@neon6, 0.6);
 }

@@ -7,11 +7,11 @@
     "modules-left": ["custom/distro", "hyprland/workspaces", "temperature", "cpu", "memory", "disk"],
     "modules-center": ["clock"],
     "modules-right": ["pulseaudio", "bluetooth", "network", "custom/netspeed", "custom/uptime", "battery"],
-    // Nord palette
-    // Polar Night: #2E3440 #3B4252 #434C5E #4C566A
-    // Snow Storm:  #D8DEE9 #E5E9F0 #ECEFF4
-    // Frost:       #8FBCBB #88C0D0 #81A1C1 #5E81AC
-    // Aurora:      #BF616A #D08770 #EBCB8B #A3BE8C #B48EAD
+    // Neon Green palette
+    // Void:   #0A0F0A #0F1710 #17261A #2F4A35
+    // Haze:   #C6F5CE #DDFFE3 #F2FFF4
+    // Neon:   #00FFC8 #39FF14 #76FF3C #0ABF53
+    // Signal: #FF2D55 #FFB31A #D7FF1A #00FF85 #00E5A0
 
     "custom/distro": {
         "format": "󰣇 ",
@@ -29,9 +29,9 @@
         "tooltip-format": "<tt>{calendar}</tt>",
         "calendar": {
             "format": {
-                "months":   "<span color='#88C0D0'><b>{}</b></span>",
-                "weekdays": "<span color='#81A1C1'><b>{}</b></span>",
-                "today":    "<span color='#EBCB8B'><b><u>{}</u></b></span>"
+                "months":   "<span color='#39FF14'><b>{}</b></span>",
+                "weekdays": "<span color='#76FF3C'><b>{}</b></span>",
+                "today":    "<span color='#D7FF1A'><b><u>{}</u></b></span>"
             }
         }
     },

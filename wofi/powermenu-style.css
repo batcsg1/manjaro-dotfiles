@@ -1,8 +1,8 @@
-/* Nord — power menu (matches style.css launcher)
-   polar night #2e3440 #3b4252 #434c5e #4c566a
-   snow storm  #d8dee9 #e5e9f0 #eceff4
-   frost       #8fbcbb #88c0d0 #81a1c1 #5e81ac
-   aurora      #bf616a #d08770 #ebcb8b #a3be8c #b48ead */
+/* Neon Green — power menu (matches style.css launcher)
+   void    #0a0f0a #0f1710 #17261a #2f4a35
+   haze    #c6f5ce #ddffe3 #f2fff4
+   neon    #00ffc8 #39ff14 #76ff3c #0abf53
+   signal  #ff2d55 #ffb31a #d7ff1a #00ff85 #00e5a0 */
 
 * {
     font-family: "DepartureMono Nerd Font Mono", monospace;
@@ -10,10 +10,10 @@
 }
 
 #window {
-    background-color: #2e3440;
-    border: 2px solid #4c566a;
+    background-color: #0a0f0a;
+    border: 2px solid #2f4a35;
     border-radius: 12px;
-    color: #d8dee9;
+    color: #c6f5ce;
 }
 
 #outer-box {
@@ -27,15 +27,15 @@
     margin: 4px 4px 10px 4px;
     padding: 10px 14px;
     border-radius: 8px;
-    border: 1px solid #434c5e;
-    background-color: #3b4252;
-    color: #eceff4;
-    caret-color: #88c0d0;
+    border: 1px solid #17261a;
+    background-color: #0f1710;
+    color: #f2fff4;
+    caret-color: #39ff14;
     box-shadow: none;
 }
 
 #input:focus {
-    border-color: #88c0d0;
+    border-color: #39ff14;
     box-shadow: none;
 }
 
@@ -52,36 +52,36 @@
     margin: 3px 4px;
     padding: 10px 14px;
     border-radius: 8px;
-    border: 1px solid #3b4252;
-    background-color: #3b4252;
+    border: 1px solid #0f1710;
+    background-color: #0f1710;
     transition: all 0.15s ease;
 }
 
 #entry:hover {
-    background-color: #434c5e;
+    background-color: #17261a;
 }
 
 #entry:selected {
-    background-color: #434c5e;
-    border: 1px solid #88c0d0;
+    background-color: #17261a;
+    border: 1px solid #39ff14;
     outline: none;
 }
 
 #text {
     margin: 0 6px;
     font-weight: bold;
-    color: #d8dee9;
+    color: #c6f5ce;
 }
 
-/* each option gets its own aurora hue (order = order in powermenu.fish) */
-#inner-box flowboxchild:nth-child(4n+1) #text { color: #bf616a; } /* shutdown */
-#inner-box flowboxchild:nth-child(4n+2) #text { color: #ebcb8b; } /* reboot   */
-#inner-box flowboxchild:nth-child(4n+3) #text { color: #81a1c1; } /* suspend  */
-#inner-box flowboxchild:nth-child(4n+4) #text { color: #b48ead; } /* exit     */
+/* each option gets its own hue (order = order in powermenu.fish) */
+#inner-box flowboxchild:nth-child(4n+1) #text { color: #ff2d55; } /* shutdown */
+#inner-box flowboxchild:nth-child(4n+2) #text { color: #d7ff1a; } /* reboot   */
+#inner-box flowboxchild:nth-child(4n+3) #text { color: #00ffc8; } /* suspend  */
+#inner-box flowboxchild:nth-child(4n+4) #text { color: #39ff14; } /* exit     */
 
 #text:selected,
 #inner-box flowboxchild:selected #text {
-    color: #eceff4;
+    color: #f2fff4;
 }
 
 #img {

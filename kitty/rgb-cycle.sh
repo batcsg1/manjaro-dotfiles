@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Cycles kitty's cursor, active border and active tab through the spectrum.
+# Cycles kitty's cursor, active border and active tab through the neon green range.
 # Run from inside kitty (uses $KITTY_LISTEN_ON):  ~/.config/kitty/rgb-cycle.sh &
-colors=(ff1744 ff6d00 ffd600 00e676 00e5ff 2979ff d500f9 ff00aa)
+colors=(0ABF53 1FE05C 39FF14 76FF3C A8FF00 D7FF1A 00FF85 00FFC8)
 delay=${1:-0.4}
 i=0
 while :; do
