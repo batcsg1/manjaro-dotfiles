@@ -67,7 +67,7 @@ truncation_symbol = '…/'
 home_symbol = '~'
 
 [git_branch]
-symbol = ' '
+symbol = ' '
 format = ' [$symbol$branch](bold fg:neon15)'
 
 [git_status]
