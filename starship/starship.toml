@@ -30,6 +30,7 @@ Fedora  = ""
 Windows = ""
 Macos   = ""
 Linux   = ""
+Manjaro = "󱘊 "
 
 [shell]
 disabled = false
@@ -38,13 +39,13 @@ zsh_indicator = 'zsh'
 fish_indicator = 'fish'
 powershell_indicator = 'pwsh'
 unknown_indicator = 'sh'
-format = '[](bg:neon9 fg:neon10)[  $indicator ](bold bg:neon9 fg:neon0)'
+format = '[](bg:neon9 fg:neon10)[   $indicator ](bold bg:neon9 fg:neon0)'
 
 [username]
 show_always = true
 style_user = 'bold bg:neon8 fg:neon0'
 style_root = 'bold bg:neon8 fg:neon11'
-format = '[](bg:neon8 fg:neon9)[  $user/]($style)'
+format = '[](bg:neon8 fg:neon9)[ $user/]($style)'
 
 [hostname]
 ssh_only = false
@@ -53,7 +54,7 @@ format = '[$hostname ](bold bg:neon8 fg:neon0)'
 [time]
 disabled = false
 time_format = '%H:%M'
-format = '[](bg:neon7 fg:neon8)[  $time ](bold bg:neon7 fg:neon0)[](fg:neon7)'
+format = '[](bg:neon7 fg:neon8)[   $time ](bold bg:neon7 fg:neon0)[](fg:neon7)'
 
 # ── line 2: directory + git ──────────────────────────────────────
 
