@@ -4,9 +4,9 @@
     "height": 30,
     "spacing": 4,
     "fixed-center": true,
-    "modules-left": ["custom/distro", "hyprland/workspaces", "temperature", "cpu", "memory", "disk"],
+    "modules-left": ["custom/distro", "hyprland/workspaces", "temperature", "cpu", "memory", "disk", "pulseaudio"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "bluetooth", "network", "custom/netspeed", "custom/uptime", "battery"],
+    "modules-right": ["bluetooth", "network", "custom/netspeed", "custom/uptime", "battery"],
     // Neon Green palette
     // Void:   #0A0F0A #0F1710 #17261A #2F4A35
     // Haze:   #C6F5CE #DDFFE3 #F2FFF4
@@ -14,7 +14,7 @@
     // Signal: #FF2D55 #FFB31A #D7FF1A #00FF85 #00E5A0
 
     "custom/distro": {
-        "format": "󰣇 ",
+        "format": "󱘊",
         "tooltip": false
     },
 
